@@ -1,0 +1,139 @@
+header {
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  background-color: rgba(23, 23, 23, 0.4);
+}
+.container {
+  height: auto;
+  width: auto;
+  padding: 2rem;
+  padding-left: 0;
+  margin-left: 0;
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.hero_img img{
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  object-fit: cover;
+  height: 100vh;
+}
+.bg {
+  animation: square2 4s infinite forwards;
+}
+@keyframes square2 {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  75% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.content {
+  margin-left: 0;
+  padding-left: 0;
+}
+.text-light,
+.btn-bg {
+  animation: text 4s forwards infinite;
+}
+
+@keyframes text {
+  0% {
+    color: var(--color-font);
+  }
+  25% {
+    color: var(--color-bg);
+  }
+  50% {
+    color: var(--color-bg-variant);
+  }
+  75% {
+    color: var(--color-primary-variant);
+  }
+  100% {
+    color: var(--color-primary);
+  }
+}
+
+.cta a {
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.header__socials {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+  font-size: 1.5rem;
+}
+
+.header__container h1 {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.footer_socials_icons {
+  color: var(--color-font);
+  font-size: 2rem;
+}
+.footer_socials_icons:hover {
+  color: var(--color-primary);
+}
+.multitext {
+  color: var(--color-bg-variant);
+}
+.name {
+  font-size: 18px;
+}
+/*--------------medium device -------*/
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 100vw;
+    margin-top: 3rem;
+  }
+  .header__container {
+    width: 100%;
+  }
+  .header__container h1 {
+    font-size: 30px;
+    color: var(--color-primary-variant);
+  }
+}
+
+/*--------------small device -------*/
+
+@media screen and (max-width: 420px) {
+  .container {
+    width: var(--container-width-sm);
+    margin-top: 3rem;
+  }
+  section > h5 {
+    margin-bottom: 1rem;
+    color: var(--color-font);
+  }
+
+  .bg {
+    position: fixed;
+  }
+}

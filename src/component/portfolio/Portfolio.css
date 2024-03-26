@@ -1,0 +1,17 @@
+#portfolio {
+  background-image: url("../../assets/studio1.jpg");
+            height: 100vh;
+            width: 100vw;
+            background-size: cover;
+            background-repeat: no-repeat;
+        
+}
+.portfolio__div{
+  width: 50vw;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  padding-top: 1.5rem;
+}

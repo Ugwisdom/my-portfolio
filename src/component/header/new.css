@@ -1,0 +1,13 @@
+.header_container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.hero_img, content{
+  width: 50%;
+}
+.hero_img img{
+  width: auto;
+}
